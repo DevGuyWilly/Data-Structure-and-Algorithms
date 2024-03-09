@@ -5,7 +5,7 @@ let Set = function () {
   // this would hold the items
   let Collections = [];
 
-  //   thismethods will check for the presence of an element and return true of flase
+  //   this methods will check for the presence of an element and return true of flase
   this.has = function (element) {
     return Collections.indexOf(element) !== -1;
   };
@@ -30,5 +30,15 @@ let Set = function () {
         index = Collections.indexOf(element);
         Collections.splice();
     }
+    return false;
   }
+  
+
+  // Returns size of an array
+  this.size = function() {
+    return Collections.length();
+  }
+
+  // return the union of two sets
+
 };
